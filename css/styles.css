@@ -1,0 +1,142 @@
+/* styles.css 
+   Project: 
+   Author: 
+   Date: 
+	
+   Helpful links: 
+   	Web colors: 
+   		https://en.wikipedia.org/wiki/Web_colors#X11_color_names
+	Color picker tool:
+		https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Colors/Color_picker_tool
+		http://colorpicker.com
+
+*/
+
+*{
+   box-sizing: border-box;
+   color: snow;
+}
+
+img{
+   display: block;
+}
+
+body{
+   padding: 5%;
+   background-color: midnightblue;
+}
+
+h1, h2{
+   text-align: center;
+   font-family: 'Bungee Shade', cursive;
+}
+
+.photos{
+   position: relative;
+   padding: 5%;
+   border: 10px solid blue;
+   margin: 5%;
+   width: 40%;
+   float: left;
+}
+
+.photos img{
+   width: 90%;
+   margin-left: 5%;
+   border: 10px solid indigo;
+}
+
+.caption {
+   position: absolute;
+   bottom: 0;
+   background-color: darkmagenta;
+   width: 100%;
+   padding: 1%;
+   display: none;
+   left: 0;
+   text-align: center;
+   font-family: 'Iceland', cursive;
+   font-size: 1.3em;
+}
+
+.overlay {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.7);
+   display: none;
+   overflow-y: scroll;
+}
+
+.modal {
+   background-color: black;
+   position: relative;
+   border: 7px solid indigo;
+   width: 850px;
+   height: 450px;
+   padding: 20px;
+   margin: auto;
+   margin-top: 10%;
+   display: none;
+   color: linen;
+}
+
+.modalpic img {
+   float: left;
+   padding-top: 70px;
+   padding-left: 37px;
+}
+
+.modaltext{
+   float: left;
+   padding-top: 30px;
+   padding-left: 75px;
+   font-family: 'Iceland', cursive;
+   font-size: 1.2em;
+   /*text-align: center;*/
+}
+
+.closer {
+   position: absolute;
+   top: 0px;
+   right: 0px;
+   cursor: pointer;
+   padding-right: 3%;
+   font-size: 1.5em;
+}
+
+.closer p:hover {
+   color: red;
+}
+
+/*
+media query */
+
+@media only screen and (max-width: 640px) {
+
+   .modal {
+      width: 400px;
+      height: 700px;
+   }
+
+   .modalpic {
+      padding-left: 27px;
+   }
+
+   .modaltext {
+      padding-left: 80px;
+   }
+
+}
+
+
+
+
+
+
+
+
+
+
